@@ -3,7 +3,7 @@ import Navlogos from './navbarlogo'
 
 const Navbar = () => {
   return (
-    <div className='bg-black w-fit'><Navlogos/></div>
+    <div className=' w-fit'><Navlogos/></div>
   )
 }
 

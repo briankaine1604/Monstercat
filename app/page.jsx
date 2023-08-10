@@ -1,26 +1,35 @@
 
 import Image from "next/image"
+import {CiPlay1} from  'react-icons/ci'
+import {BsShare} from  'react-icons/bs'
+import Section from "@components/section/section"
 
 const Page = () => {
   return (
-    
-    <div className="grid grid-cols-2">
-       <div className="w-11/12 h-[400] border border-blue-700 relative  mx-auto">
+    <div className="grid grid-rows-2 gap-4">
+    <div className="grid grid-cols-2 border didact-gothic">
+       <div className="w-10/12 h-[400]  relative mx-auto ">
        <Image
        fill={true}
        style={{objectFit:"cover"}}
-       src="/images/offset.jpg"
+       src="/images/offset.png"
        alt="album cover"
        loading="lazy"
        className="object-right"
        />
        </div>
-       <div  className="w-full border border-blue-700 flex flex-col">
-        <div>WITHOUT WARNING</div>
-        <div>OFFSET</div>
+       <div  className="w-10/12 h-[400] mx-auto flex flex-col justify-center">
+        <div className="level gothic-a1 font-light tracking-widest text-5xl">MIXTAPE</div>
+        <div className="text-white didact-gothic font-extrabold  text-3xl tracking-tight mb-10">OFFSET</div>
        
-        <div ><button className="btn_design">LISTEN</button> <button>SHARE</button></div>
+        <div className="w-full h-16 grid grid-cols-5 gap-3 gothic-a1 text-lg font-bold" >
+          <button className="text-white bg-olivegreen col-span-3 flex items-center justify-center"><CiPlay1 className="mr-2"/>LISTEN </button> 
+          <button className="border text-white border-white col-span-2 flex items-center justify-center"><BsShare className="mr-2"/>SHARE</button>
+          </div>
        </div>
+       
+    </div>
+    <Section/>
     </div>
   )
 }
