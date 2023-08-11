@@ -21,7 +21,7 @@ const Layout = ({children}) => {
        </div>
        <div className='z-10  grid grid-cols-7 relative w-full h-screen'>
        <div className='mx-auto mt-10'><Logo /></div>
-        <div className='col-span-5 mt-48 border'>{children}</div>
+        <div className='col-span-5 mt-48'>{children}</div>
         <div className='mx-auto mt-10 '> <Navbar /></div>
        </div>
         

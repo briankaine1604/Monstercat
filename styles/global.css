@@ -28,6 +28,11 @@
         font-family: 'Italiana', serif;
     }
 
+    .sectionstyle{
+        @apply border py-6 flex justify-center;
+      }
+      
+
     
 /* global.css */
 .dark-overlay {
@@ -39,7 +44,7 @@
     background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
     z-index: 1; /* Make sure the overlay is above the background image */
   }
-  
+
   
   
 } 

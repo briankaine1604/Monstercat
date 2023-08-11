@@ -1,4 +1,4 @@
-
+"use client"
 import Image from "next/image"
 import {CiPlay1} from  'react-icons/ci'
 import {BsShare} from  'react-icons/bs'
@@ -6,9 +6,9 @@ import Section from "@components/section/section"
 
 const Page = () => {
   return (
-    <div className="grid grid-rows-2 gap-4">
-    <div className="grid grid-cols-2 border didact-gothic">
-       <div className="w-10/12 h-[400]  relative mx-auto ">
+    <div className="flex flex-col ">
+    <div className="grid grid-cols-2 didact-gothic">
+       <div className="w-[400] h-[400]  relative mx-auto ">
        <Image
        fill={true}
        style={{objectFit:"cover"}}
