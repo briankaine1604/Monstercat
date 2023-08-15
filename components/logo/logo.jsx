@@ -7,7 +7,7 @@ const Logo = () => {
        <Image
        fill={true}
        style={{objectFit:"cover"}}
-       src="/images/labs3.png"
+       src="/images/aria.png"
        alt="logo"
        
        
