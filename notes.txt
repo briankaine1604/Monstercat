@@ -1,5 +1,5 @@
 PROJECT NOTES
 
-Add audio music from youtube
+Add audio music from spotify using API 
 
 what about doing it for different musicians and make it dynamic ?

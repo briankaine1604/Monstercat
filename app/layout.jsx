@@ -7,8 +7,12 @@ import Image from "next/image"
 const Layout = ({children}) => {
   
   return (
-    <div>
-    <div className='fixed w-full h-screen z-0 '>
+    
+  <html><body>
+    
+  
+       <div className=' grid grid-cols-7 relative w-full h-screen'>
+       <div className='fixed w-full h-screen z-0 '>
       <Image
        fill={true}
        style={{objectFit:"cover"}}
@@ -19,14 +23,14 @@ const Layout = ({children}) => {
        />
        <div className="dark-overlay"></div>
        </div>
-       <div className='z-10  grid grid-cols-7 relative w-full h-screen'>
-       <div className='mx-auto mt-10'><Logo /></div>
-        <div className='col-span-5 mt-48'>{children}</div>
-        <div className='mx-auto mt-10 '> <Navbar /></div>
+       <div className='mx-auto mt-10 z-10 '><Logo /></div>
+        <div className='col-span-5 mt-48 z-10 '>{children}</div>
+        <div className='mx-auto mt-10 z-10 '> <Navbar /></div>
        </div>
         
+       </body></html>
         
-        </div>
+        
   )
 }
 
